@@ -19,9 +19,17 @@ from Tkinter import *
 root = Tk()
 drawpad = Canvas(root, width=800,height=600, background='white')
 drawpad.grid(row=0, column=1)
+
 # house and roof
 square = drawpad.create_rectangle(200,200,500,500)
 roofline1 = drawpad.create_line(180,220,350,50)
 roofline2 = drawpad.create_line(350,50,520,220)
+
+# windows and door
+window1 = drawpad.create_rectangle(230,230,310,310)
+window2 = drawpad.create_rectangle(470,230,390,310)
+window3 = drawpad.create_rectangle(230,390,310,470) 
+window4 = drawpad.create_rectangle(470,390,390,470)
+
 
 root.mainloop()
